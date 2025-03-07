@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#4a6bff">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Bigyan Labs - Empower Your Learning Journey</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/src/css/style.css">
+</head>
+<body data-theme="blue" data-mode="light">
+    <div id="preloader">
+        <video id="preloader-video" autoplay muted>
+            <source src="public/videos/video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div id="website-content">
+        <div class="theme-controls">
+            <div class="theme-switcher">
+                <div class="theme-btn theme-blue active" data-theme="blue"></div>
+                <div class="theme-btn theme-purple" data-theme="purple"></div>
+                <div class="theme-btn theme-green" data-theme="green"></div>
+            </div>
+            
+            <div class="mode-switcher">
+                <div class="mode-toggle">
+                    <i class="fas fa-sun light-icon"></i>
+                    <i class="fas fa-moon dark-icon"></i>
+                    <div class="mode-slider"></div>
+                </div>
+            </div>
+        </div>
+
+        <header class="fade-header">
+            <div class="logo-space">
+                <a href="#" class="logo">
+                    <img src="public/images/Bigyan Labs Logo Dark Mode.png" alt="Bigyan Labs Logo">
+                </a>
+            </div>
+            
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <nav>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#team">Our Team</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    
+                    <div class="mobile-auth-buttons">
+                        <a href="/" target="_blank" class="btn btn-outline">Login</a>
+                    </div>
+                </div>
+            </nav>
+            
+            <div class="auth-buttons">
+                <a href="/" target="_blank" class="btn btn-outline">Login</a>
+            </div>
+        </header>
+
+        <section class="hero" id="home">
+            <canvas id="hero-canvas"></canvas>
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Empower Your <span>Learning Journey</span></h1>
+                    <p>Tech solutions to education-related problems. Smart Management Systems.</p>
+                    <p><b>Vidyā Dhanaṃ Sarvadhanapradhānam</b></p>
+                    <a href="#contact" class="btn btn-primary cta-btn">
+                        Explore Offerings <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="scroll-down-btn">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </section>
+        <section class="features" id="features">
+            <div class="container">
+                <h2 class="section-title">Why Choose Bigyan Labs?</h2>
+                <p class="section-subtitle">Our platform offers a unique learning experience with features designed to enhance your educational journey.</p>
+                <div class="feature-bar">
+                    <div class="features-grid">
+                        <div class="feature-card" data-aos="fade-up">
+                            <div class="feature-icon">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <h3>Interactive Learning</h3>
+                            <p>Engage with our interactive lessons that make learning fun and effective. Practice as you learn with real-time feedback.</p>
+                            <button class="btn btn-outline">Learn More</button>
+                        </div>
+                        
+                        <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="feature-icon">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                            </div>
+                            <h3>Expert Instructors</h3>
+                            <p>Learn from industry professionals with years of experience. Our instructors are passionate about sharing their knowledge.</p>
+                            <button class="btn btn-outline">Meet Them</button>
+                        </div>
+                        
+                        <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="feature-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h3>Flexible Schedule</h3>
+                            <p>Study at your own pace, on your own time. Our courses are available 24/7, so you can learn whenever it's convenient for you.</p>
+                            <button class="btn btn-outline">How It Works</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="courses" id="courses">
+            <div class="courses-bg"></div>
+            <div class="container">
+                <h2 class="section-title">Our Courses</h2>
+                <p class="section-subtitle">Explore our most popular courses and start your learning journey today.</p>
+                
+                <div class="coming-soon-container">
+                    <div class="coming-soon-content">
+                        <div class="coming-soon-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>Exciting Courses Coming Soon!</h3>
+                        <p>We're working hard to bring you the best learning experience. Our courses are currently in development and will be available soon.</p>
+                        <div class="countdown">
+                            <div class="countdown-item">
+                                <span id="days">30</span>
+                                <span>Days</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span id="hours">24</span>
+                                <span>Hours</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span id="minutes">60</span>
+                                <span>Minutes</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span id="seconds">60</span>
+                                <span>Seconds</span>
+                            </div>
+                        </div>
+                        <div class="notify-form">
+                            <input type="email" placeholder="Enter your email" class="notify-input">
+                            <button class="btn btn-primary notify-btn">Notify Me</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="team" id="team">
+            <div class="container">
+                <h2 class="section-title">Meet the Team</h2>
+                <p class="section-subtitle">Our team of experts is dedicated to providing you with the best technical experience.</p>
+                
+                <div class="team-grid">
+                    <div class="team-card" data-aos="fade-up">
+                        <div class="team-image">
+                            <img src="public/images/Sujay Kr. Dolai.png" alt="Sujay Kumar Dolai">
+                            <div class="team-social">
+                                <a href="https://www.linkedin.com/in/sujay-dolai-655b778b/" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                                <a href="mailto:dolaisujay@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-content">
+                            <h3>Sujay Kumar Dolai</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="team-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="team-image">
+                            <img src="public/images/Anurag Deb.jpg" alt="Anurag Deb">
+                            <div class="team-social">
+                                <a href="https://www.linkedin.com/in/anurag-deb-3685882b3/" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                                <a href="mailto:anuragdeb2005@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-content">
+                            <h3>Anurag Deb</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="team-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="team-image">
+                            <img src="public/images/Prithvi Raj Banik.jpg" alt="Prithvi Raj Banik">
+                            <div class="team-social">
+                                <a href="https://www.linkedin.com/in/prithvi-raj-banik-451a62319/" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                                <a href="mailto:prithvirajbanik900@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-content">
+                            <h3>Prithvi Raj Banik</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="team-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="team-image">
+                            <img src="public/images/Debapriya Mondal.png" alt="Debapriya Mondal">
+                            <div class="team-social">
+                                <a href="https://www.linkedin.com/in/debapriya-mondal-67b07130b/" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                                <a href="mailto:thedebapriyamondal@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-content">
+                            <h3>Debapriya Mondal</h3>
+                        </div>
+                    </div>
+
+                    <div class="team-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="team-image">
+                            <img src="public/images/Sangram Keshari Patra.jpg" alt="Sangram Keshari Patra">
+                            <div class="team-social">
+                                <a href="https://www.linkedin.com/in/sangram-keshari-patra-a89205319/" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                                <a href="mailto:sangramkpatra03@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-content">
+                            <h3>Sangram Keshari Patra</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials" id="testimonials">
+            <div class="container">
+                <h2 class="section-title">What Our Clients Say</h2>
+                <p class="section-subtitle">Hear from our clients about their experience with Bigyan Labs.</p>
+                
+                <div class="testimonial-slider">
+                    <div class="testimonial-container">
+                        <div class="testimonial-card active">
+                            <div class="testimonial-content">
+                                <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                                <p>A seamless and intelligent solution! Bigyan Labs not only simplifies attendance tracking but also enhances classroom management, making learning more interactive and organized.</p>
+                                <div class="testimonial-author">
+                                    <img src="public/images/Prabir Kr. Das.png" alt="Prabir Kr. Das">
+                                    <div>
+                                        <h4>Dr. Prabir Kr. Das</h4>
+                                        <span>Head, BSH, IEM Salt Lake</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                                <p>Bigyan Labs provides a modern, tech-driven approach to education. From attendance automation to smart classroom tools, it has been a valuable addition to our events and lectures.</p>
+                                <div class="testimonial-author">
+                                    <img src="public/images/Ranabir Banik.png" alt="Ranabir Banik">
+                                    <div>
+                                        <h4>Dr. Ranabir Banik</h4>
+                                        <span>Coordinator, IIFR CoE, IEM</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                                <p>Bigyan Labs has transformed the way we manage workshops and classrooms. Its automated attendance and smart classroom features make sessions more efficient and engaging.</p>
+                                <div class="testimonial-author">
+                                    <img src="public/images/Chandan Adhikari.png" alt="Chandan Adhikari">
+                                    <div>
+                                        <h4>Dr. Chandan Adhikari</h4>
+                                        <span>Coordinator, IIFR CoE, IEM</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-controls">
+                        <button class="testimonial-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+                        <div class="testimonial-dots">
+                            <span class="dot active" data-index="0"></span>
+                            <span class="dot" data-index="1"></span>
+                            <span class="dot" data-index="2"></span>
+                        </div>
+                        <button class="testimonial-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="container">
+                <h2 class="section-title">Get in Touch</h2>
+                <p class="section-subtitle">Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+                
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h3>Our Location</h3>
+                                <p>D-1, EP Block, Sector V, Salt Lake Electronics Complex, Kolkata - 700091</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h3>Email Us</h3>
+                                <p>info.bigyanlabs@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <h3>Call Us</h3>
+                                <p>+91 90731 53035</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-logo">
+                        <div class="logo-text">Bigyan Labs</div>
+                        <p>Empowering your learning journey through interactive education.</p>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#courses">Courses</a></li>
+                            <li><a href="#team">Our Team</a></li>
+                            <li><a href="#testimonials">Testimonials</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Bigyan Labs. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script type="module" src="/src/js/main.js"></script>
+</body>
+</html>
